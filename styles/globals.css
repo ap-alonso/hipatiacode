@@ -1,0 +1,42 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header{
+  display: block;
+  width: 100%;
+}
+.menu-container{
+  display: flex;
+  width: 100%;
+}
+
+.menu-container .menu-item{
+  display: block;
+  min-width: 180px;
+}
+
+.menu-container .menu-item:hover{
+  cursor: pointer;
+}
+
+.menu-container .menu-item.dropdown .menu-items{
+  display: none;
+}
+
+.menu-container .menu-item.dropdown:hover .menu-items{
+  display: block;
+}
